@@ -1,0 +1,24 @@
+# Programming-in-c
+C Codes of basic and advanced problems
+#include<stdio.h>
+#include<string.h>
+void copy(char *ptr,int *l){
+    char str[100];
+    int i=0;
+    for(i=0;i<*l;i++){
+    str[i]=*(ptr+i);
+    }
+    str[*l]='\0';
+    printf("Copied String is ");
+    puts(str);
+}
+int main()
+{
+char str[100];
+int l;
+printf("Enter String: ");
+gets(str);
+l=strlen(str);
+copy(&str[0],&l);
+return 0;
+}
