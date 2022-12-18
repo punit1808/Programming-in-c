@@ -1,0 +1,32 @@
+# Programming-in-c
+C Codes of basic and advanced problems
+#include<stdio.h>
+int sort(int *ptr,int *l){
+    int i,b=0,c,arr[*l];
+    for(c=0;c<*l;c++){
+    for(i=0;i<*l;i++){
+ if(*(ptr+i)>b&&*(ptr+i)<arr[c-1]){
+    b=*(ptr+i);
+ }
+    }
+    arr[c]=b;
+    b=0;
+    }
+  for(i=*l-1;i>=0;i--){
+    printf("%d\n",arr[i]);
+  }
+  return 0;
+}
+int main()
+{
+    int l,i=0;
+int arr[100];
+printf("Enter number of elements : ");
+scanf("%d",&l);
+for(i=0;i<l;i++){
+    printf("Enter element %d: ",i+1);
+    scanf("%d",&arr[i]);
+}
+sort(&arr[0],&l);
+return 0;
+}
