@@ -1,0 +1,33 @@
+# Programming-in-c
+C Codes of basic and advanced problems
+#include<stdio.h>
+int access(int *ptr,int *n){
+    int a,b,i,j,z=0;
+    int arr[*n][*n];
+    for(i=0;i<*n;i++){
+        for(j=0;j<*n;j++){
+            arr[i][j]=*(ptr+z);
+            z++;
+        }
+    }
+printf("Enter Row:  ");
+scanf("%d",&a);
+printf("and Column:");
+scanf("%d",&b);
+printf("Needed Element is %d",arr[a-1][b-1]);
+return 0;
+}
+int main()
+{
+    int n,i,j,a,b;
+    printf("Enter Order of Matrix: ");
+    scanf("%d",&n);
+int arr[n][n];
+for(i=0;i<n;i++){
+    for(j=0;j<n;j++){
+printf("Enter Row->%d  column->%d \nelement: ",i+1,j+1);
+scanf("%d",&arr[i][j]);
+} }
+access(&arr[0][0],&n);
+return 0;
+}
