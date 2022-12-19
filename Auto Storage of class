@@ -1,0 +1,11 @@
+# Programming-in-c
+C Codes of basic and advanced problems
+#include <stdio.h>
+// Automatic Storage Class(Optional)-->Format of Arguments
+// Garbage value if not assigned any value
+int main() {
+auto int a=3,b=4;
+printf("Sum is %d",a+b);
+
+    return 0;
+}
